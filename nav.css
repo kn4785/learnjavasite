@@ -1,0 +1,354 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+	padding: 0;
+}
+
+a {
+ font-style: normal;
+ font-weight: normal;
+ text-decoration: none;
+ color: #FFFFFF;
+}
+
+/* Header CSS */
+
+header {
+  position: sticky;           /* Default position for browser that support sticky position */
+  position: -webkit-sticky;   /* Chrome   Safari */
+  position: -moz-sticky;      /* Firefox */
+  position: -ms-sticky;       /* Microsoft edge */
+  position: -o-sticky;          /* Opera */
+  margin: auto;
+}
+
+div.nav_bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+ul.nav {
+  list-style-type: none;
+  overflow: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5%;
+  background-color: #6380b9;
+  position: sticky;
+}
+
+
+li.nav_bar {
+  float: left;
+}
+
+a.nav_bar {
+  display: block;
+  padding: 8px;
+  color: white;
+  font-size: 1.4em;
+  text-decoration: none;
+  position: sticky;
+}
+
+a.nav_bar:hover {
+  background-color: #8e97c9;
+}
+
+/* End of header CSS */
+
+
+/*
+  Reference: https://codepen.io/erikterwan/pen/EVzeRP?editors=1100
+*/
+
+/* start of Hamburger CSS */
+
+#hamburger_nav {
+  visibility: hidden;
+}
+
+a.hamburger_nav {
+  text-decoration: none;
+  color: #232323;
+  font-size: 2.0vw;
+  transition: color 0.3s ease;
+}
+
+a.hamburger_nav:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  visibility: hidden;
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  z-index: 2;
+
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #FFFFFF;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  opacity: 0.70;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+li.hamburger_bar
+{
+  padding: 10px 0;
+}
+
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/* end of Hamburger CSS */
+
+/* Background image css */
+
+.background_image {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: -1;
+}
+
+.dropbtn {
+  font-size: 1.4em;
+  background-color: #b57a60;
+  color: white;
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:#c79078;}
+
+.dropbtn:hover {
+  background-color: #c79078;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #c79078;
+}
+
+.testing_nav_bar {
+  display: inline;
+  margin: 0;
+}
+
+/* Beginning of footer CSS  */
+
+.footer {
+  margin-top: 10%;
+  /*padding-top: 20%;*/
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #595959;
+  z-index: 3;
+}
+
+.html5_validation_image {
+  display: inline;
+  margin-left: 13%;
+  margin-right: 10px;
+}
+
+.css_validation_image {
+  display: inline;
+  margin-left: 10px;
+}
+
+.logo_footer {
+  display: inline;
+  margin-left: 12%;
+  margin-right: 6%;
+}
+
+.other_links {
+  display: inline;
+}
+
+.footer_nav_text {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.0vw;
+  color: #FFFFFF;
+  display: inline;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+
+.grid_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid1 {
+  position: relative;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.grid2 {
+  position: relative;
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+
+.grid3 {
+  position: relative;
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 1;
+}
+
+/* end of footer css */
+
+@media only screen and (max-width: 1250px) {
+
+  /* show the hamburger menu and hid the nav bar */
+  #menuToggle {
+    visibility: visible;
+  }
+
+  #hamburger_nav {
+    visibility: visible;
+  }
+
+  #HomePage {
+    visibility: hidden;
+  }
+
+  #banner {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 80%;
+  }
+}

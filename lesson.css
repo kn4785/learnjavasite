@@ -1,0 +1,192 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+            
+.imageL {
+    float: left;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+            
+.imageC {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+            
+.imageR {
+    float: right;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+
+/*START OF LESSON CSS*/
+
+.lessoncontent {
+    padding-bottom: 1rem;
+}
+
+.lessoncontent p {
+    margin: 0rem 1.5rem 1.5rem 1.5rem;
+}
+
+.lessonwrapper {
+    box-sizing: border-box;
+}
+    
+.lessonwrapper h1 {
+    text-align: center;
+    margin: 1rem;
+    color: #835036
+}
+
+.lessoncontent h3 {
+    text-align: center;
+    padding: 1rem;
+    color: #966045;
+}
+    
+.lessoncontent p {
+    color: #593522;
+    font-size: 1.2rem;
+}
+
+.lessoncontent ul {
+    list-style: circle outside;
+    padding-left: 2rem;
+}
+
+.lessonContent li {
+    font-size: 1.2rem
+}
+
+.lbutton {
+    background-color: #FF9330;
+    border-radius: 30%;
+    padding: 0.5rem;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: background-color 1s, color 1s;
+    -moz-transition: background-color 1s, color 1s;
+    -o-transition: background-color 1s, color 1s;
+    transition: background-color 1s, color 1s;
+}
+    
+    .lbutton:hover {
+        background-color: #835036;
+        color: white;
+    }
+    
+    .limagerow {
+        padding: 0 1rem 1rem 1rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .limagerow::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .limagecol {
+        float: left;
+        width: 33.33%;
+        padding: 0.25rem;
+    }
+    
+    .limagecol2 {
+        float: left;
+        width: 50%;
+        padding: 0.25rem;
+    }
+    
+    .lclass {
+        min-height: 319px;
+    }
+    
+    .lmainmethod {
+        min-height: 400px;
+    }
+    
+    .ldataandvar {
+        min-height: 605px;
+    }
+    
+    .lsystem {
+        min-height: 441px;   
+    }
+    
+    .lconstructors {
+        min-height: 478px;
+        margin-bottom: 2rem;
+    }
+    
+    .lmethods {
+        min-height: 542px;
+        margin-bottom: 2rem;
+    }
+    
+    .dowhilediv {
+        min-height: 709px;
+        margin-bottom: 2rem;
+    }
+
+    .roundedc {
+        border-radius: 20px;
+    }
+    /*.lessonbutton {
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 12px;
+          cursor: pointer;
+          text-align: center;
+          text-decoration: none;
+          outline: none;
+          color: #fff;
+          background-color: #F76902;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 9px #ddd;
+    }
+
+    .lessonbutton:hover { background-color: #F15F01; }
+
+    .lessonbutton:active {
+        background-color: #F15F01;
+        box-shadow: 0 5px #999;
+        transform: translateY(4px);
+    }*/
+/* END OF LESSON CSS */
+    
+    // this can be modified for whatever is the mobile size. this is for changing the columns/rows
+    @media only screen and (max-width: 500px) {
+        .limagecol {
+            width: 80%;
+        }
+        .limagecol2 {
+            width: 80%;
+        }
+        .imageL {
+            width: 80%;
+            float: clear;
+        }
+            
+        .imageC {
+            width: 80%;
+        }
+            
+        .imageR {
+            width: 80%;
+            float: clear;
+        }
+    }

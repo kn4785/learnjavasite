@@ -1,0 +1,544 @@
+/* GENERAL CSS that applies to ALL PAGES */
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* END OF GENERAL CSS */
+
+/* Background image css */
+.background_image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.dropbtn {
+	font-size: 1.4em;
+	background-color: #b57a60;
+	color: white;
+	padding: 16px;
+	border: none;
+	cursor: pointer;
+	font-family: 'Quicksand', sans-serif !important;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #c79078;
+}
+
+.dropbtn:hover {
+	background-color: #c79078;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: #c79078;
+}
+
+.testing_nav_bar {
+	display: inline;
+	margin: 0;
+}
+
+/* END OF BACKGROUND CSS */
+
+/* Beginning of footer CSS  */
+.footer {
+	margin-top: 10%;
+	/*padding-top: 20%;*/
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #595959;
+	z-index: 3;
+}
+
+.html5_validation_image {
+	display: inline;
+	margin-left: 13%;
+	margin-right: 10px;
+}
+
+.css_validation_image {
+	display: inline;
+	margin-left: 10px;
+}
+
+.logo_footer {
+	display: inline;
+	margin-left: 12%;
+	margin-right: 6%;
+}
+
+.other_links {
+	display: inline;
+}
+
+.footer_nav_text {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2.0vw;
+	color: #FFFFFF;
+	display: inline;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
+}
+
+.grid_footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid1 {
+	position: relative;
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 1;
+}
+
+.grid2 {
+	position: relative;
+	grid-row: 1 / span 1;
+	grid-column: 2 / span 1;
+}
+
+.grid3 {
+	position: relative;
+	grid-row: 1 / span 1;
+	grid-column: 3 / span 1;
+}
+
+/* END of footer css */
+
+/*START OF EX 1 CSS*/
+.exWrapper {
+	margin: 5%;
+}
+
+.exWrapper h1,
+h2 {
+	text-align: center;
+}
+
+.exContent {
+	font-size: 25px;
+}
+
+.exContent ul {
+	list-style: none;
+}
+
+.exContent input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.exContent input:checked + label {
+	color: #4CAF50;
+	font-weight: bold;
+	/* background-color: yellow; if we want it highlighted instead */
+}
+
+.exButtons {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.exButtons button {
+	background-color: #4CAF50;
+	border: 1px solid green;
+	border-bottom: none;
+	color: white;
+	padding: 10px 24px;
+	cursor: pointer;
+	float: left;
+	width: 100%;
+}
+
+.exButtons:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.exButtons button:hover {
+	background-color: #3e8e41;
+}
+
+
+.exButtonGroup button {
+	width: 50%;
+	border-bottom: 1px solid green;
+}
+
+.exButtonGroup button:not(:last-child) {
+	border-right: none;
+}
+
+/*END OF EX 1 CSS*/
+
+
+/*START OF UNIQUE EX 2 CSS */
+.testDiv * {
+	display: inline;
+	margin-bottom: 1em;
+}
+
+#errorMessage {
+	color: red;
+	margin-bottom: 1em;
+}
+
+/*END OF UNIQUE EX 2 CSS */
+
+
+
+/*START OF INDEX.PHP CSS*/
+#welcomeContainer {
+	width: 100%;
+	font-family: 'Quicksand', sans-serif;
+	background: #ffda99;
+}
+
+#title {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-weight: normal;
+	font-size: 5vw;
+	color: #FFFFFF;
+}
+
+#welcomeText {
+	text-align: left;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 2vw;
+}
+
+#logInContainer {
+	margin-left: 40%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2vw;
+}
+
+.loginButtons {
+	font-size: 1vw;
+	padding-top: .4rem;
+}
+
+/*END OF INDEX.PHP CSS */
+
+
+
+
+/*START OF REGISTER CSS*/
+#registerContainer {
+	width: 100%;
+	font-family: 'Quicksand', sans-serif;
+	background: #ffda99;
+}
+
+#title {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-weight: normal;
+	font-size: 5vw;
+	color: #FFFFFF;
+}
+
+#incorrectPassText {
+	text-align: center;
+	margin-top: 1rem;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 1.5vw;
+	visibility: hidden;
+}
+
+#logInContainer {
+	margin-left: 40%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2vw;
+}
+
+.loginButtons {
+	font-size: 1vw;
+	padding-top: .4rem;
+}
+
+#postLoginText {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 2vw;
+	margin-top: 3rem;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+/*END OF REGISTER CSS*/
+
+
+/*START OF POSTLOGIN CSS*/
+/*it was all the same as the register AND INDEX.ph*/
+/*END OF POSTLOGIN CSS*/
+
+/*START OF CSS FOR QUIZ */
+#quizcontainer {
+	margin-left: 5%;
+}
+
+.question {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.questionText {
+	font-weight: bold;
+}
+
+.quizChoiceInput {
+	display: inline-block;
+}
+
+.quizChoiceDiv {
+	display: block;
+}
+
+#score {
+	visibility: hidden;
+}
+/*End OF CSS FOR QUIZ */
+
+
+
+/*START OF COMMENTS & BLOG CSS*/
+#commentsBody {
+	margin-top: 0rem;
+	font-family: 'Vollkorn', serif;
+	font-weight: 400;
+	line-height: 1.7;
+	color: black;
+	box-sizing: border-box;
+	display: block;
+}
+
+.headerComments {
+	text-align: center;
+	background-color: #F76902;
+	padding: 4rem;
+	font-size: 2rem;
+	z-index: -1;
+}
+
+.row {
+	max-width: 114rem;
+	margin: 0 auto;
+}
+
+.row:not(:last-child) {
+	margin-bottom: 4rem;
+}
+
+#commentsForm {
+	display: block;
+}
+
+.row[class^="col-"] {
+	float: left;
+}
+
+.comment_form,
+.comment {
+	padding: 6rem;
+}
+
+.form_group:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
+.form_input {
+	-webkit-appearance: textfield;
+	background-color: white;
+	-webkit-rtl-ordering: logical;
+	cursor: text;
+	padding: 1px;
+	border-width: 2px;
+	border-style: inset;
+	border-color: initial;
+	border: .1rem solid #333;
+	font-size: 1.5rem;
+	border-radius: 2px;
+	font-family: 'Vollkorn', serif;
+}
+
+.form_textarea {
+	font-size: 1.5rem;
+	font-family: inherit;
+	padding: 1.5rem 1rem;
+	color: inherit;
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: .1rem solid #333;
+	outline: none;
+	margin: 0em;
+	display: inline-block;
+}
+
+
+textarea {
+	text-rendering: auto;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-align: start;
+	font: 400 11px system-ui;
+	-webkit-writing-mode: horizontal-tb !important;
+}
+
+#btn {
+	text-transform: uppercase;
+	font-family: 'Vollkorn', serif;
+	text-decoration: none;
+	padding: 1.5rem 3rem;
+	border-radius: 10rem;
+	border: none;
+	font-size: 1.5rem;
+	display: inline-block;
+	transition: all .2s;
+	background-color: #F76902;
+	color: #fff;
+}
+
+table {
+	display: table;
+	margin-left: 12%;
+	width: 75vw;
+	align-content: center;
+	border-collapse: collapse;
+	font-size: 1.5rem;
+}
+
+th {
+	background-color: #F76902;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	font-size: 2rem;
+}
+
+td {
+	padding: 15px;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	display: table-row;
+	background-color: white;
+}
+
+tr:nth-child(odd) {
+	display: table-row;
+	background-color: #D7D2CB;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+}
+
+.headerComments {
+	animation: 3s linear 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+
+	/*END OF COMMENTS & BLOG CSS*/
+
+
+
+
+@media only screen and (max-width: 725px) {
+	.exContent {
+		font-size: 3.5vw;
+	}
+}
+
+@media only screen and (max-width: 56.25em) {
+	.comment_form {
+		width: 100%;
+	}
+
+	.row [class^="col-"] {
+		width: 100% !important;
+	}
+
+	.form_textarea {
+		width: 100%;
+	}
+
+	.comment_table {
+		width: 100%;
+	}
+}
